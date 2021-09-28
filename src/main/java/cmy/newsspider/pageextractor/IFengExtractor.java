@@ -39,6 +39,9 @@ public class IFengExtractor extends PageExtractor {
         var dateElement = pageDoc.select("div[class^=artical] div[class^=info-] p[class^=time]>span");
         if (dateElement.isEmpty()) {
             dateElement = pageDoc.select("span[itemprop=datePublished]");
+            if (dateElement.isEmpty()) {
+                return "";
+            }
         }
         return dateElement.get(0).text().strip();
     }

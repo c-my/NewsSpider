@@ -1,4 +1,14 @@
 package cmy.newsspider.record;
 
-public record NewsRecord(String title, String content, String source, String date) {
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public record NewsRecord(
+        @JsonProperty("title")
+        String title,
+        @JsonProperty("content")
+        String content,
+        @JsonProperty("source")
+        String source,
+        @JsonProperty("time")
+        String time) {
 }
