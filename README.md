@@ -9,8 +9,6 @@
 | 新浪新闻 | [https://search.sina.com.cn](https://search.sina.com.cn)     |
 | 搜狗搜索 | [https://www.sogou.com/sogou?interation=1728053249&query=](https://www.sogou.com/sogou?interation=1728053249&query=) |
 
-
-
 ### 支持的网站页面
 
 | 网站       | URL                                                          |
@@ -27,4 +25,9 @@
 
 ### 环境
 
-JDK17
+* JDK17
+* Gradle 7.2
+
+### 运行
+
+`gradlew run`
